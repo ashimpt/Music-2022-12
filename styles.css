@@ -1,0 +1,74 @@
+* {
+  background: #000;
+  color: tan;
+  font-family: monospace;
+}
+
+body > *:not(script) {
+  display: block;
+}
+
+:hover {
+  color: white;
+}
+
+#url,
+canvas {
+  background: #333;
+  min-width: 228px;
+}
+
+#url-container > * {
+  display: inline-block;
+}
+
+audio {
+  width: 340px;
+  background: #ccc;
+  padding: 2px 0;
+}
+
+#output {
+  margin-top: 2em;
+  white-space: nowrap;
+}
+
+#output > div > * {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+#output-project .memo {
+  display: inline-block;
+  margin-left: 1em;
+  border-bottom: #666 1px dashed;
+  min-width: 1.5em;
+  font-size: small;
+}
+
+#output-project > div {
+  margin: 1em 0;
+  border: #333 1px solid;
+}
+
+#output-project svg {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+svg > text {
+  fill: #999;
+  cursor: pointer;
+  user-select: none;
+}
+svg > .processing {
+  fill: tan;
+}
+svg > .done {
+  fill: #fff;
+}
+svg > line,
+svg > rect {
+  stroke: #666;
+  stroke-width: 2px;
+}
