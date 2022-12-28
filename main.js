@@ -78,7 +78,7 @@ function outputScoreTree() {
     if (obj.type == "file") {
       if (!/\.js$/.test(obj.name)) return; // json, sh
       const url = dir + obj.name;
-      const a = output("📜" + url, "#", () => openProject(url));
+      const a = output(url, "#", () => openProject(url));
 
       a.addEventListener("focus", () => setScoreUrl(url));
     }
